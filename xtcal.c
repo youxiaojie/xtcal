@@ -235,11 +235,18 @@ void touch_cal(struct pt *points, int cnt, int width, int height)
     print_matrix( "abc", abc, 3,1 );
     print_matrix( "def", def, 3,1 );
 
+
+    printf("Calibrate by issuing the command below, substituting "
+           "<device name> with the name found using `xinput list`.\n");
+
+    printf("xinput set-prop <device name> 'Coordinate Transformation Matrix' ");
+
     for(i=0;i<3;i++)
         printf("%f ", abc[i] );
     for(i=0;i<3;i++)
         printf("%f ", def[i] );
     printf( "0 0 1\n");
+
 }
 
 void process_cal_data( Widget w, void *u, void *p )
