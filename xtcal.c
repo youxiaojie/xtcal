@@ -296,8 +296,8 @@ void grab_window_quit(Widget top)
 char* fallback_resources[] = {
     "*calib.foreground: White",
     "*calib.highlight:  Red",
-    "*calib.lineWidth: 10",
-    "*calib.background: Lightblue",
+    "*calib.lineWidth:  1",
+    "*calib.background: Grey",
     NULL
 };
 
