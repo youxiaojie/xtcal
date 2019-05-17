@@ -26,3 +26,5 @@ xtcal will try to go fullscreen, if this doesn't work you need to run with:
 **To install**
 
 `sudo apt-get install libxaw7-dev`
+For raspbian need libxxf86vm-dev libxft-dev
+sudo apt-get install libxxf86vm-dev libxft-dev
